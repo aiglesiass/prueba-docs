@@ -6,10 +6,6 @@ nav_order: 1
 description: The uXcale Docs repository.
 ---
 
-
-
----
-
  **Uxcale Docs** es un repositorio en el que se almacenan todos los documentos relacionados con la metodología de la empresa.
 {: .mb-7}
 

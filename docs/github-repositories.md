@@ -1,14 +1,14 @@
 ---
-layout: page
-title: API Scoring Suite on GitHub
+layout: API Manager
+title: API Manager Suite on GitHub
 nav_order: 4
 ---
 <div class="d-flex">
     <div>
-        <p>You can find the API Scoring Suite distributed in two repositories:</p>
+        <p>You can find the API Manager Suite</p>
         <ul>
-            <li><a href="https://github.com/InditexTech/api-scoring-engine" target="_blank">API Scoring Engine</a>.</li>
-            <li><a href="https://github.com/InditexTech/api-scoring-ide-plugins" target="_blank">API Scoring IDE plugings</a>.</li>
+            <li><a href="https://github.com/aiglesiass/prueba-docs/blob/main/docs/400_API_Managers/Readme.md target="_blank">Introducción</a>.</li>
+            <li><a href="https://github.com/aiglesiass/prueba-docs/blob/main/docs/400_API_Managers/502_Mulesoft.md" target="_blank">Anypoint Platform</a>.</li>
         </ul>
     </div>
     <div>

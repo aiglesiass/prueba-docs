@@ -15,8 +15,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Boost your API's performance with our cutting-edge API Scoring system, which evaluates design quality and provides insighs for enhancement.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  sheilammg
-repository: sheilammg/Uxcale-Docs
+github_username:  aiglesiass
+repository: aiglesiass/prueba-docs
 # Build settings
 theme: just-the-docs
 
@@ -79,7 +79,7 @@ search:
 # Aux links for the upper right navigation
 aux_links:
   "Uxcale-Docs on GitHub":
-    - "//github.com/sheilammg"
+    - "//github.com/aiglesiass"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false

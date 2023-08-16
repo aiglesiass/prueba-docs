@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Anypoint Platform
-parent: 400 API Managers
-nav_order: 2
-description: Product.
+parent: API Managers
+description: Producto.
 ---
 
 # Mulesoft

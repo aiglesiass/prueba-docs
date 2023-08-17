@@ -1,65 +1,100 @@
 ---
-layout: default
+layout: page
 title: Home
-nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
 permalink: /
+nav_order: 1
+description: The API Scoring Suite is a compound of tools that make your journey of designing an API much more easy.
 ---
 
-# Focus on writing good documentation
+# Optimize your APIs with the **API Scoring Suite**
 {: .fs-9 }
 
-
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+This open-source API-First-based Scoring service evaluates your APIs according to a set of rules that the user can customize.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](#get-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View it on GitHub](/github-repositories){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-{: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
+The **API Scoring Suite** is a set of tools that can help you to achieve the best API you can get. It is made of the following components:
+{: .mb-7}
 
-Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
+<table>
+  <thead>
+    <tr>
+      <th style="color:#6852D0;">Component</th>
+      <th style="color:#6852D0;">Subcomponent</th>
+      <th style="color:#6852D0;">Functionality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan= "4">Scoring system</td>
+      <td>Microservice</td>
+      <td>The main piece that <strong>certifies an API</strong> with a grade according to a certain set of rules. It gives you an overall score according on how well design is your API.</td>
+    </tr>
+    <tr>
+      <td>Rulesets</td>
+      <td>The set of rules that <strong>nourishes the scoring service</strong>. They can be customized or changed by a new set.</td>
+    </tr>
+    <tr>
+      <td>API</td>
+      <td>The <strong>entrance gate</strong> to the microservice. Its endpoints are used by the scoring tools like the CLI or the extensions.</td>
+    </tr>
+    <tr>
+      <td>CLI</td>
+      <td>The command line tool that helps you to easily get an <strong>instant result of your API's scrore</strong> from you terminal. You can also display which are the rules that have been compromised with a verbose command.</td>
+    </tr>
+    <tr>
+      <td rowspan= "2">IDE Extensions</td>
+      <td>API Hub</td>
+      <td>This extension, along with a local SPA, is able to retrieve a <strong>visual and interactive review of your API's design</strong>.</td>
+    </tr>
+    <tr>
+      <td>Quick Fix</td>
+      <td>It allows you to instantly <strong>correct any rule breach with a click</strong>. This extension is able to remove or add new content to you API specification file.</td>
+    </tr>
+  </tbody>
 
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *[customize]* the theme to make them look completely different!
+</table>
 
-Browse the docs to learn more about how to use this theme.
+## Demo
+{: .mb-3}
 
-## Getting started
+{: .warning}
+TO DO
 
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
+## Get started 
+{: .mb-3}
 
-{: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+Let's start and see how you can build the whole ecosystem up!
 
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
+1. Firs of all, you need to **deploy the microservice**. To do so, follow the [Microservice installation guide](/scoring-system/microservice/#installation).
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+2. Test the microservice by [Installing the CLI](/scoring-system/cli/#installation-and-usage). Test any API you have in hand!
 
-More specifically, the created site:
+3. Once you've verified that the microservice is up and running, you can now [deploy the SPA](/ide-extensions/overview/#spa-deployment) that the API Hub extension will use later on.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+4. [Install the API Hub](/ide-extensions/overview/#installation) in VS Code or IntelliJ and [configure it](/ide-extensions/api-hub/#settings) to work with the scoring service.
 
-Other than that, you're free to customize sites that you create with the template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-{: .note }
-See the theme [README][Just the Docs README] for how to use the theme as a gem without creating a new site.
+5. [Install the Quick Fix](/ide-extensions/overview/#installation) to design faster!
 
 ## About the project
+{: .mb-3}
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+API Scoring suite is &copy; 2023-{{ "now" | date: "%Y" }} by [Inditex Tech](https://github.com/InditexTech).
 
 ### License
+{: .mb-3}
 
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+The **API Scoring Suite** is distributed by an [Apache License 2.0](https://github.com/InditexTech/api-scoring-engine/blob/main/LICENSE).
 
 ### Contributing
+{: .mb-3}
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in the [CONTRIBUTING](/contributing/) section.
 
 #### Thank you to the contributors of Just the Docs!
 
@@ -87,14 +122,11 @@ Just the Docs is committed to fostering a welcoming community.
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Liquid]: https://github.com/Shopify/liquid/wiki
 [Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
 [source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
 [Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
+[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
 [Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[customize]: {% link docs/customization.md %}
 [use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
